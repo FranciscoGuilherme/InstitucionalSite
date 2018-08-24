@@ -7,15 +7,22 @@
      * -----------------------------------------------------------
      */
 
-     public static function _array($array)
+     public static function _array($data)
      {
-       if ( is_array( $array ) )
+       if ( is_array( $data ) )
        {
          echo '<pre>'.
-                print_r( $array, true ).
-              '<//pre>';
-         exit;
+                print_r( $data, true ).
+              '</pre>';
        }
+       else
+       {
+         echo '<pre>'.
+                $data.
+              '</pre>';
+       }
+
+       exit;
      }
   }
 ?>

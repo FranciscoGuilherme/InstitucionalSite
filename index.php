@@ -1,5 +1,6 @@
 <?php
   require 'configuration.php';
+  require 'debug/debug.php';
 
   spl_autoload_register(function ($class)
   {

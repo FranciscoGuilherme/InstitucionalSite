@@ -13,7 +13,7 @@
 
       $URL = explode( 'index.php', $_SERVER['PHP_SELF'] );
       $URL = end( $URL );
-
+      
       $this -> setViewController( $URL, $current );
 
       $controller = new $current['Controller']();
@@ -39,7 +39,7 @@
      {
        $URL = explode( '/', $URL );
 
-       $current['Controller'] = $URL[1];
+       $current['Controller'] = $URL[1].'Controller';
        $current['Action'] = ( isset( $URL[2] ) ) ? $URL[2] : 'index';
 
        array_shift( $URL );

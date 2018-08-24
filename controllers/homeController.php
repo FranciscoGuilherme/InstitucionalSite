@@ -5,7 +5,11 @@
     {
       $data = array();
 
-      $this -> loadView( 'home', $data );
+      $portifolio = new Portifolio();
+
+      $data['photos'] = $portifolio -> getPhotos( 8 );
+
+      $this -> loadTemplate( 'home', $data );
     }
   }
 ?>

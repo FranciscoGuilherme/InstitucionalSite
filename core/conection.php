@@ -3,13 +3,13 @@
   {
     protected $db;
 
-    public __construct()
+    public function __construct()
     {
       global $db_configuration;
 
       try
       {
-        $dsn = 'mysql:dbname='.$db_configuration['name'].';host='.global $db_configuration['host'];
+        $dsn = 'mysql:dbname='.$db_configuration['name'].';host='.$db_configuration['host'];
 
         $this -> db = new PDO( $dsn, $db_configuration['user'], $db_configuration['pass'] );
       }
