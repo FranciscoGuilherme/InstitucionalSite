@@ -13,7 +13,7 @@
 
       $URL = explode( 'index.php', $_SERVER['PHP_SELF'] );
       $URL = end( $URL );
-      
+
       $this -> setViewController( $URL, $current );
 
       $controller = new $current['Controller']();

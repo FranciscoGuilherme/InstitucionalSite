@@ -4,8 +4,11 @@
 
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" href="/assets/css/template.css" />
-    <link rel="stylesheet" href="/assets/css/home.css" />
+    <link rel="stylesheet" href="/assets/css/template.css?version=0" />
+    <link rel="stylesheet" href="/assets/css/home.css?version=0" />
+    <link rel="stylesheet" href="/assets/css/portifolio.css?version=0" />
+    <link rel="stylesheet" href="/assets/css/sobre.css?version=0" />
+    <link rel="stylesheet" href="/assets/css/contato.css?version=0" />
   </head>
 
   <body>

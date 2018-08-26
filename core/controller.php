@@ -1,6 +1,14 @@
 <?php
   class Controller
   {
+    protected $response = array(
+      'status' => '',
+      'data'   => array(
+                    'type'    => array( 'success', 'warning', 'error' ),
+                    'message' => ''
+                  )
+    );
+
     /**
      * -----------------------------------------
      * Carrega uma view na tela a partir do nome
@@ -25,7 +33,7 @@
      * @param string $viewName Nome da view
      * @param array $data Dados a serem carregados juntos com a view
      */
-     
+
     public function loadTemplate($viewName, $data = array())
     {
       include 'views/template.php';

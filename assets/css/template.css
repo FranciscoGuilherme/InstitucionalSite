@@ -72,9 +72,10 @@ body
  .container
  {
    width      : 100%;
-   max-width  : 980px;
+   max-width  : 940px;
    margin     : auto;
    min-height : 400px;
+   padding    : 20px;
 
    background-color: #FFFFFF;
  }

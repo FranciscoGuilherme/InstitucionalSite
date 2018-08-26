@@ -1,0 +1,20 @@
+.contato form
+{
+  margin  : 0;
+  padding : 0;
+}
+
+.formulario input,
+.formulario textarea
+{
+  width  : 400px;
+  height : 30px;
+  border : 1px solid black;
+
+  border-radius: 5px;
+}
+
+.formulario textarea
+{
+  height: 150px;
+}

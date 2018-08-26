@@ -1,7 +1,5 @@
-<div class="home_sobre">
-  <img src="" border="0" width="150" height="150" />
-
-  <h4>Sobre</h4>
+<div class="sobre">
+  <h1>Sobre</h1>
   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -12,16 +10,4 @@
     and more recently with desktop publishing software like Aldus PageMaker including
     versions of Lorem Ipsum.
   </p>
-</div>
-
-<div class="home_portifolio">
-  <h4>Meu portifólio recente</h4>
-
-  <?php foreach ( $photos as $key => $value ): ?>
-  <div class="photos">
-    <img src="/assets/portifolio/<?php echo $value['image']; ?>" border="0" width="200" height="150" />
-  </div>
-  <?php endforeach; ?>
-
-  <div style="clear: both;"></div>
 </div>
